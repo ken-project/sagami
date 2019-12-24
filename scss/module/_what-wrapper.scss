@@ -1,0 +1,24 @@
+
+.what-wrapper-top{
+  text-align: center;
+}
+
+.what-wrapper-2column{
+  display: flex;
+  justify-content: center;
+  img{
+    @include img-responsive;
+  }
+}
+
+.what-wrapper-3column{
+  display: flex;
+  justify-content: center;
+  img{
+    @include img-responsive;
+  }
+}
+
+.what-wrapper div{
+  text-align: center;
+}

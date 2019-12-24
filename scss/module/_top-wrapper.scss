@@ -1,0 +1,9 @@
+
+
+.top-wrapper{
+  background-image:url(../img/main.png);
+  height: 0;
+  /* 表示画像の高さ ÷ 表示画像の幅 × 100 */
+  padding-top: 47.57%;
+  background-size: cover;
+}

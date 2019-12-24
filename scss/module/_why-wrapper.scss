@@ -1,0 +1,24 @@
+
+.why-wrapper{
+  text-align: center;
+}
+
+.workman{
+  display: flex;
+  justify-content: center;
+  img{
+    @include img-responsive;
+  }
+}
+
+.btn-gradient-radius{
+  @include btn;
+}
+
+.btn-gradient-radius:active {
+  @include btn-active;
+}
+
+.my-white{
+  color: white;
+}

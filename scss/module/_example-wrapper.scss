@@ -1,0 +1,22 @@
+
+.example-wrapper h3{
+  text-align: center;
+}
+
+.more{
+  text-align: center;
+}
+
+.example-wrapper-top{
+  display: flex;
+  justify-content: center;
+}
+
+.example-wrapper-bottom{
+  display: flex;
+  justify-content: center;
+}
+
+.card img{
+    @include img-responsive;
+}
