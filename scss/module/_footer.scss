@@ -1,7 +1,16 @@
 
+//@include mq('pc'){}
+//@include mq('tab'){}
+//@include mq('sp'){}
+
+
+footer{
+  background-color: #E4DCD2;
+  height: 300px;
+}
 .footer-wrapper{
-  width: 70%;
-  margin: auto;
+//  width: 70%;
+//  margin: auto;
 }
 
 .footer-wrapper-top{
@@ -9,5 +18,37 @@
   justify-content: space-between;
   ul{
     list-style: none;
+    li{
+      margin-right: 5px;
+      a{
+        text-decoration: none;
+        font-size: 18px;
+        color: $black;
+        font-weight: 500;
+        padding: 5px 15px;
+      }
+    }
+  }
+}
+.footer-left{
+  margin-top: 35px;
+  margin-left: 65px;
+}
+.footer-right{
+  margin-top: 35px;
+}
+.footer-address{
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 65px;;
+  font-size: 20px;
+}
+small{
+  margin-left: 65px;
+}
+
+@include mq('tab'){
+  .footer-right{
+    display: none;
   }
 }

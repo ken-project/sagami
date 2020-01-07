@@ -1,10 +1,24 @@
 
+//@include mq('pc'){}
+//@include mq('tab'){}
+//@include mq('sp'){}
+
+.example-wrapper{
+  background-color: $main2_color;
+}
 .example-wrapper h3{
   text-align: center;
+  font-size: 40px;
+  padding-top: 100px;
 }
-
+.example-underline3{
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
 .more{
   text-align: center;
+  padding: 80px 0;
 }
 
 .example-wrapper-top{
@@ -15,8 +29,84 @@
 .example-wrapper-bottom{
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
 .card img{
     @include img-responsive;
+}
+.card-textbox{
+  font-weight: bold;
+  background-color:#FFF;
+  height: 100px;
+  padding-top: 15px;
+  padding-left: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  p{
+    margin-top: 10px;
+  }
+}
+.card-margin{
+  margin:0 15px;
+}
+
+@include mq('pc'){
+ .card-tags-wrapper{
+   display: none;
+ }
+}
+ @include mq('tab'){
+  .card-tags-wrapper{
+    display: none;
+  }
+}
+@include mq('sp'){
+  .example-wrapper-top,.example-wrapper-bottom{
+    display: block;
+  }
+  .card-tags-wrapper{
+    display: block;
+  }
+  .example-wrapper-bottom{
+    margin-top: 0;
+  }
+  .card{
+    width: 90%;
+    margin: auto;
+    background-color: #FFF;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  .card img{
+    height: 60%;
+    width: 60%;
+  }
+  .tags-wrapper{
+    display: flex;
+  }
+  .card-wrapper{
+    display: flex;
+  }
+  .tags{
+    margin-left: 10px;
+    p{
+      font-size: 10px;
+      padding: 5px;
+      background-color: $sub_color;
+      border-radius: 5px;
+    }
+  }
+  .tags-margin{
+    margin-top: 5px;
+  }
+  .example-wrapper{
+    h3{
+     font-size: 30px;
+     padding-top: 100px;
+    }
+    .example-underline3 img{
+      width: 125px;
+    }
+  }
 }

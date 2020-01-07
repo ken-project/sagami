@@ -6,19 +6,55 @@
 
 header{
   display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 40px;
   .header-left{
-    width: 40%;
+    p{
+      margin-top: 36px;
+      margin-bottom: 29px;
+      margin-left: 47px;
+    }
+    .header-left-logo{
+      margin-left: 56px;
+    }
   }
   .header-right{
-    width: 60%;
-    position: relative;
     .btn{
       position: absolute;
       top:0;
-      right:0;
+      right:20px;
     }
     .header-right-wrapper{
       display: flex;
+      padding-left: 130px;
+
+      .tellogo{
+        margin-top: 25px;
+      }
+      h2{
+        font-size: 48px;
+        margin-left: 13px;
+        margin-top: 25px;
+      }
+    }
+    .header-right-text{
+      color: $main_color;
+      margin-top: 21px;
+      letter-spacing: 0.05em;
+      padding-left: 130px;
+    }
+    .span1{
+      padding: 5px 10px;
+      border: solid 1px $main_color;
+      border-radius: 8px;
+      margin-right: 5px;
+    }
+    .span2{
+      padding: 5px 15px;
+      border: solid 1px $main_color;
+      border-radius: 8px;
+      margin: 0 5px;
     }
   }
 }
@@ -27,12 +63,40 @@ nav ul{
   list-style: none;
 }
 .nav{
+  //margin-right: 110px;
+  margin-top: 18px;
   display: flex;
-  //justify-content: space-between;
+  justify-content: space-between;
   li{
     margin-right: 10px;
     a{
       text-decoration: none;
+      font-size: 20px;
+      color: $black;
+      font-weight: bold;
+      padding: 5px 15px;
     }
+  }
+}
+.nav-border{
+  border-right: solid 3px $sub_color;
+}
+@include mq('tab'){
+  .header-right{
+    display: none;
+  }
+}
+@include mq('sp'){
+  header{
+    height: 50px;
+  }
+  .header-left p{
+    display: none;
+  }
+  .header-left-logo{
+    margin-left: 5% !important;
+    margin-top: 5% !important;
+    height: 100%;
+    width: 75%;
   }
 }

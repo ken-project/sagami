@@ -1,11 +1,26 @@
 
+//@include mq('pc'){}
+//@include mq('tab'){}
+//@include mq('sp'){}
+
 .why-wrapper{
-  text-align: center;
+  background-color: $main2_color;
+  height: 680px
 }
 
 .workman{
   display: flex;
   justify-content: center;
+  .man1{
+    align-self: flex-end;
+  }
+  .man2{
+    align-self: flex-end;
+  }
+  .man3{
+    align-self: flex-end;
+
+  }
   img{
     @include img-responsive;
   }
@@ -13,12 +28,65 @@
 
 .btn-gradient-radius{
   @include btn;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  padding: 27px 65px;
+  border-radius: 50px;
+  background-color : $sub_color;
+  box-shadow: 0 5px 0 #D39E29;
+  border-bottom: none;
 }
 
 .btn-gradient-radius:active {
   @include btn-active;
 }
-
+.reasons-btn{
+  text-align: center;
+  margin-top: 33px;
+}
 .my-white{
   color: white;
+  margin-right: 10px;
+  font-size: 1.2em;
+}
+
+h2{
+  text-align: center;
+  font-size: 37px;
+}
+.why-underline{
+  text-align: center;
+  margin-top: 7px;
+}
+
+@include mq('sp'){
+  .why-wrapper{
+    background-color: $main2_color;
+    height: auto;
+  }
+  .workman{
+    display: block;
+    justify-content: none;
+    text-align: center;
+    margin-right: 20px;
+    img{
+      width:70%;
+      margin-top: 50px;
+    }
+  }
+  h2{
+    font-size: 30px;
+    margin-top: 90px;
+  }
+  .why-underline img{
+    width: 180px;
+  }
+  .reasons-btn{
+    .btn-gradient-radius{
+     font-size: 15px;
+     padding: 30px 60px;
+     margin-top: 30px;
+   }
+  }
 }

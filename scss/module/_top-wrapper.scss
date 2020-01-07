@@ -1,9 +1,21 @@
 
 
+
+//@include mq('pc'){}
+//@include mq('tab'){}
+//@include mq('sp'){}
+
 .top-wrapper{
   background-image:url(../img/main.png);
   height: 0;
   /* 表示画像の高さ ÷ 表示画像の幅 × 100 */
   padding-top: 47.57%;
   background-size: cover;
+  border-bottom: solid 5px $main_color;
+}
+
+@include mq('sp'){
+  .top-wrapper{
+    padding-top: 55%;
+   }
 }

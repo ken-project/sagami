@@ -1,0 +1,82 @@
+
+
+//@include mq('pc'){}
+//@include mq('tab'){}
+//@include mq('sp'){}
+
+.news-wrapper{
+  margin: auto;
+  height: 105px;
+  width: 70%;
+  background-color: #FFF;
+  position: relative;
+  top: -60px;
+  border-radius: 10px;
+  box-shadow: 4px 4px $shadow-gray;
+}
+.news-flex{
+  display: flex;
+  justify-content: space-between;
+  p{
+    margin-left: 41px;
+    margin-top: 29px;
+    color:$main_color;
+  }
+}
+.news-wrapper-undertext{
+  margin-left: 41px;
+  font-size: 20px ;
+  text-decoration: underline;
+  position: relative;
+  top: -20px;
+}
+.news-list{
+  border: solid 3px $sub_color;
+  padding: 13px 30px;
+  border-radius: 50px;
+  margin-right: 35px;
+  a{
+    text-decoration: none;
+    color:$black;
+  }
+}
+.space{
+  margin-left: 35px;
+  color:$sub_color;
+}
+
+@include mq('sp'){
+  .news-flex{
+    display: block;
+    justify-content: none;
+    p{
+      margin-left: 10%;
+      margin-top: 40px;;
+    }
+  }
+  .news-wrapper-undertext{
+    margin-left: 10%;
+    font-size: 25px ;
+    top: -80px;
+  }
+  .news-wrapper{
+    width: 100%;
+    top: 0;
+    height: 150px;
+  }
+  .news-list{
+    border:none;
+    padding: 0;
+    margin-right: 0;
+  }
+  .news-right{
+    margin-top: 77px;
+    margin-left:45px;
+  }
+  .news-list a{
+    border: solid 3px $sub_color;
+    border-radius: 50px;
+    padding: 10px 30px;
+  }
+
+}
