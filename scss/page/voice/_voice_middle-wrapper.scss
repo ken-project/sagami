@@ -1,0 +1,118 @@
+
+
+//@include mq('pc'){}
+//@include mq('tab'){}
+//@include mq('sp'){}
+
+.voice-box{
+  width: 488px;
+  background-color: $main2_color;
+  margin: auto;
+  margin-bottom: 30px;
+  border-radius:10px;
+}
+.voice-now{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 57px;
+  font-size: 16px;
+  letter-spacing: 1.3px;
+}
+.voice_middle-wrapper{
+  .voice-box-first{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+  }
+  .voice-box-top{
+    display:flex;
+    border: thin;
+    padding-top: 30px;
+    .voice-box-left{
+      width: 50%;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin: auto;
+      .voice-box-head{
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 30px;
+      }
+      .voice-box-text{
+        font-size: 16px;
+        line-height: 30px;
+      }
+    }
+    .voice-box-right{
+      width: 50%;
+      margin: auto;
+      img{
+        //width:95%;
+        max-width: 100%;
+        height: auto;
+        //margin-left: 20px;
+      }
+    }
+  }
+}
+
+.voice_ad-wrapper{
+  text-align: center;
+  margin-bottom: 54px;
+}
+.voice-box-bottom{
+  display: flex;
+  //justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 10px;
+  span{
+    font-size: 14px;
+    padding: 7px 14px;
+    background-color: $sub_color;
+    border-radius: 10px;
+    margin-right: 8px;
+  }
+}
+@include mq('tab'){
+  .voice_ad-wrapper{
+    display: none;
+  }
+  .voice_footer-wrapper{
+    display: none;
+  }
+}
+
+@include mq('sp'){
+  .voice-box-top{
+  flex-direction: column;
+  }
+  .voice-box-left{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 90%  !important;
+  }
+  .voice-box-right{
+    width: 100% !important;
+    text-align: center;
+    img{
+      width:277px !important;
+      //height: 207px !important;
+    }
+  }
+  .voice-box-bottom{
+    width: 277px;
+    margin: auto;
+    justify-content: space-between;
+    //argin-bottom: 10px;
+    span{
+      padding: 7px 10px;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      margin-right: 0;
+    }
+  }
+}

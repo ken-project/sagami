@@ -1,3 +1,5 @@
+
+
 @import "base/reset";
 @import "base/base";
 @import "setting/color";
@@ -6,9 +8,8 @@
 @import "mixin/mq";
 @import "mixin/btn";
 @import "mixin/img-responsive";
-//body
-//@import "base/base";
-//headedr
+
+//top-page
 @import "module/header";
 @import "module/main";
 @import "module/top-wrapper";
@@ -21,5 +22,10 @@
 @import "module/ad-wrapper";
 @import "module/footer";
 
+//voice-page
+@import "page/voice/voice_top-wrapper";
+@import "page/voice/voice_middle-wrapper";
 
-//wrapper1
+//example--page
+@import "page/example/example_top-wrapper";
+@import "page/example/example_middle-wrapper";

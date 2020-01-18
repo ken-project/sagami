@@ -14,12 +14,11 @@
         <ul class="nav">
           <li><a class="nav-border" href="#">選ばれる理由</a></li>
           <li><a class="nav-border" href="#">サービス内容</a></li>
-          <li><a class="nav-border" href="#">施工事例</a></li>
-          <li><a class="nav-border" href="#">お客様の声</a></li>
+          <li><a class="nav-border" href="example.php">施工事例</a></li>
+          <li><a class="nav-border" href="voice.php">お客様の声</a></li>
           <li><a href="#">会社案内</a></li>
         </ul>
       </nav>
       <a href="#" class="btn header-btn"><img src="img/inquery.png" alt="お問い合わせ"></a>
     </div>
   </header>
-  <div class="top-wrapper"></div>
