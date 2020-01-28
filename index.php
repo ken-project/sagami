@@ -8,14 +8,43 @@
   <link rel="stylesheet" href="scss/style.min.css">
   <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <script src="js/jquery.rwdImageMaps.js"></script>
 
+  <script src="http://code.jquery.com/jquery-[latest].min.js"></script>
+
+  <!--drawer-->
+  <script src="scss/plugins/jquery.slidereveal.min.js"></script><!-- /drawer -->
+  <!--accordidon-->
+  <script type="text/javascript" src="scss/plugins/accordion.js"></script><!-- /accordion -->
+  <!-- ad -->
+  <script src="js/jquery.rwdImageMaps.js"></script>  <!-- /ad -->
 
 
   <title>★相模修建</title>
 </head>
+<body class="drawer-position">
 
-<body>
+
+  <!-- ドロワー部分 -->
+
+
+  <nav id="slider" class="nav-item">
+      <div class="nav-box nav-item-border"><a href="#"><i class="fas fa-arrow-right nav-array"></i>トップページ</a></div>
+      <div class="nav-box nav-item-border"><a href="#"><i class="fas fa-arrow-right nav-array"></i>選ばれる理由</a></div>
+      <div class="nav-box2">サービス内容</div>
+      <div class="nav-box"><a href="#"><i class="fas fa-arrow-right nav-array"></i>屋根工事</a></div>
+      <div class="nav-box"><a href="#"><i class="fas fa-arrow-right nav-array"></i>塗装工事</a></div>
+      <div class="nav-box"><a href="#"><i class="fas fa-arrow-right nav-array"></i>外構リフォーム</a></div>
+      <div class="nav-box"><a href="#"><i class="fas fa-arrow-right nav-array"></i>内装リフォーム</a></div>
+      <div class="nav-box"><a href="#"><i class="fas fa-arrow-right nav-array"></i>雨どい工事</a></div>
+      <div class="nav-box nav-item-border"><a href="#"><i class="fas fa-arrow-right nav-array"></i>施工事例</a></div>
+      <div class="nav-box nav-item-border"><a href="#"><i class="fas fa-arrow-right nav-array"></i>お客様の声</a></div>
+      <div class="nav-box nav-item-border"><a href="#"><i class="fas fa-arrow-right nav-array"></i>会社案内</a></div>
+  </nav>
+
+
+  <!-- ドロワー表示・非表示ボタン -->
+
+
   <div class="inner">
 
 <!-- header -->
@@ -36,11 +65,12 @@
             <p>2099.99.99</p>
           </div>
           <div class="news-right">
-            <p class="news-list"><a href="#">新着情報一覧<i class="fas fa-arrow-right space"></i></a></p>
+            <p class="news-list"><a href="#">新着情報一覧<img src="img/right-array.png" alt=""></a></p>
           </div>
         </div>
         <div class="news-wrapper-undertext">●●キャンペーン実施中。</div>
       </div>
+
       <!-- /news -->
       <h2>選ばれる理由</h2>
       <div class="why-underline"><img src="img/underline.png"></div>
@@ -245,13 +275,30 @@
 
     <!-- ad-wrapper-->
 
-
 <!-- /footer -->
 <?php include('./footer.php'); ?>
 <!-- footer -->
 
+<script>
 
-  </div>
+
+    $("#slider").slideReveal({
+    trigger: $("#trigger"),
+    push: false,
+    overlay: true
+    });
+
+    function demo01() {
+        $(this).next().slideToggle(300);
+    }
+
+    $(".toggle").click(demo01);
+
+
+</script>
+
+
+</div><!--inner-->
 
 </body>
 

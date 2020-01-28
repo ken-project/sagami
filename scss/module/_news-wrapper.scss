@@ -22,6 +22,9 @@
     margin-top: 29px;
     color:$main_color;
   }
+  p:hover{
+    background-color: $sub_color;
+  }
 }
 .news-wrapper-undertext{
   margin-left: 41px;
@@ -44,6 +47,7 @@
   margin-left: 35px;
   color:$sub_color;
 }
+
 
 @include mq('sp'){
   .news-flex{
